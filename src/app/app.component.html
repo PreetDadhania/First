@@ -1,0 +1,30 @@
+<div class="container-fluid g-0">
+    <app-header (sideNavToggled)="sideNavStatus= $event;"></app-header>
+
+    <main>
+        <app-side-nav [sideNavStatus]="sideNavStatus" [ngClass]="
+        {'app-side-nav-open': sideNavStatus}"></app-side-nav>
+
+        <div class="display-area p-3" [ngClass]="{'display-area-shrink':sideNavStatus}">
+            <p class="fs-1 fw-bold">Awareness Towards Blood Donation</p>
+            <p>The theme for World Blood Donor Day 2022 is <b>"Donating blood is an act of solidarity. Join the effort
+                    and save lives."</b> The need for blood is universal, but access to safe blood for everyone who
+                needs it remains a challenge worldwide. Voluntary and unpaid blood donation made regularly can help
+                overcome blood shortages.</p>
+            <p class="fs-1 fw-bold">Awareness Towards Organ Donation</p>
+            <p><b>“Awareness of organ donation”</b> was defined as having heard of organ donation. The demographic
+                details were recorded for all the participants. Questions regarding knowledge and attitude were
+                administered only to those participants who have heard about organ donation.</p>
+            <p class="fs-1 fw-bold">Follow Healthy Lifestyle</p>
+            <p>Healthy movement may include <b>walking, sports, dancing, yoga or running.</b> Eat a well-balanced,
+                low-fat diet with lots of fruits, vegetables, and whole grains. Choose a diet that's low in saturated
+                fat and cholesterol, and moderate in sugar, salt and total fat.</p>
+                <p class="fs-1 fw-bold">Quit Smoking</p>
+                <p>Smoking cessation, usually called quitting smoking or stopping smoking, is <b>the process of discontinuing tobacco smoking. </b>Tobacco smoke contains nicotine, which is addictive and can cause dependence. As a result, nicotine withdrawal often makes the process of quitting difficult.</p>
+            <app-home></app-home>
+        </div>
+
+    </main>
+
+</div>
+<router-outlet></router-outlet>
